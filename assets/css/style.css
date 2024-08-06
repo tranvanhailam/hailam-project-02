@@ -25,7 +25,6 @@ body {
     min-width: 118px;
 
     border-radius: 24.5px;
-    background: #171100;
     color: #fff;
     text-align: center;
     font-weight: 600;
@@ -74,14 +73,14 @@ a {
 }
 
 .nav a:hover,
-.nav li.active a {
+.nav .active a {
     color: #171100;
     text-align: center;
     font-size: 1.6rem;
     text-shadow: 1px 0 0 currentColor;
 }
 
-.nav li.active a::after {
+.nav active a::after {
     position: absolute;
     left: 21px;
     bottom: 6px;
@@ -95,6 +94,7 @@ a {
 }
 
 .header .sign-up-btn {
+    background: #171100;
     min-width: 144px;
     padding: 11px 41px;
     line-height: 1.75;
