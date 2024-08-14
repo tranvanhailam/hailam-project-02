@@ -74,7 +74,7 @@ a {
     overflow: hidden;
 }
 
-.break-all{
+.break-all {
     word-break: break-all;
 }
 
@@ -388,7 +388,7 @@ a {
     justify-content: space-between;
 }
 
-.course-list .title a{
+.course-list .title a {
     padding-right: 6px;
     color: #171100;
     font-size: 1.8rem;
@@ -433,4 +433,85 @@ a {
 
 .course-list .book-btn:hover {
     background: #ffb900;
+}
+
+/* Feedback */
+
+.feedback {
+    margin-top: 135px;
+    background: #2e2100;
+    min-height: 380px;
+    padding: 96px 0;
+}
+
+.feedback .feedback-list {
+    display: flex;
+    overflow: hidden;
+    /* transform: translateX(-100%); */
+    transition: all ease .3s;
+}
+
+.feedback .feedback-item {
+    display: flex;
+    width: 100%;
+    flex-shrink: 0;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.feedback-item .avatar {
+    width: 72px;
+    height: 72px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.feedback-item .title {
+    margin-top: 18px;
+    color: #f7f7f7;
+    font-family: var(--font-heading);
+    font-size: 2.4rem;
+    font-weight: 700;
+    line-height: 1.41; /* 141.667% */
+}
+
+.feedback-item .desc {
+    margin-top: 4px;
+    color: #bfbcb2;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.85; /* 185.714% */
+}
+
+.feedback-item .dots {
+    margin: 28px 0 0 -6px;
+    display: flex;
+}
+
+.feedback-item .dot {
+    margin-left: 6px;
+    width: 6px;
+    height: 6px;
+    background: #634700;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.feedback-item .dot.active {
+    background: #ffb900;
+    cursor: default;
+}
+
+.feedback-item .feedback-content {
+    width: 66%;
+}
+
+.feedback-content blockquote {
+    margin-left: 30px;
+    color: #fff;
+    font-size: 2.6rem;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 1.54; /* 153.846% */
 }
